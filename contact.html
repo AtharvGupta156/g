@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <script src="https://kit.fontawesome.com/291a8f081f.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+       
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar my_close" style="background-color: #1d1b31;" >
+    <div class="logo-details">
+      <i class='bx bx-laptop'></i>
+      <span class="logo_name">Atharv Gupta</span>
+    </div>
+    <ul class="nav-links" style="background-color:#1d1b31;">
+      <li>
+        <a href="index.html">
+          <i class='bx bxs-home' ></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Home</a></li>
+        </ul>
+      </li>
+      <br> 
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-book-reader' ></i>
+            <span class="link_name">Read Books</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu" style="background: #1d1b31;">
+          <li><a class="link_name" href="#">Read Books</a></li>
+          <li><a href="adventure.html">Adventure</a></li>
+          <li><a href="fantasy.html">Fantasy</a></li>
+          <li><a href="tech.html">Technology</a></li>
+          <li><a href="bio.html">Biography</a></li>
+        </ul>
+      </li>
+      <br>
+      <li>
+        <div class="iocn-link">
+          <a href="contact.html">
+            <i class='bx bxs-chat' ></i>
+            <span class="link_name">Feedback</span>
+          </a>
+          
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="contact.html">Feedback</a></li>
+
+        </ul>
+      </li>
+      
+ 
+  </div>
+  <section class="home-section" >
+  <div class="home-content">
+    <i class='bx bx-menu' ></i>
+  </div>
+  
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img src="contact.png" alt="">
+      </div>
+    <form action="#">
+      <div class="topic">Send us a message</div>
+      <div class="input-box">
+        <input type="text" required id="name_id">
+        <label>Enter your name</label>
+      </div>
+      <div class="input-box">
+        <input type="text" required id="email_id">
+        <label>Enter your email</label>
+      </div>
+      <div class="message-box">
+        <textarea id="message_id"></textarea>
+        <label>Enter your message</label>
+      </div>
+      <div class="input-box">
+        <input type="submit" value="Send Message" onClick="send()">
+      </div>
+    </form>
+  </div>
+  </div>
+  
+  
+</section>
+  <script src="contact.js"></script>
+</body>
+</html>
