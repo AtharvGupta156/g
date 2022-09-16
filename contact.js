@@ -11,14 +11,14 @@ var firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
   
-  user_name = document.getElementById("name_id").value;
-  user_email = document.getElementById("email_id").value;
-  user_message = document.getElementById("message_id").value;
+  
   
  
 
 function send() {
-  
+  user_name = document.getElementById("name_id").value;
+  user_email = document.getElementById("email_id").value;
+  user_message = document.getElementById("message_id").value;
  firebase.database().ref("/").child(user_email).update({
           name:user_name,
           email:user_email,
